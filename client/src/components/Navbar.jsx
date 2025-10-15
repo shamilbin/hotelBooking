@@ -46,6 +46,7 @@ const Navbar = () => {
     } else {
       setIsScrolled(false);
     }
+    
 
     setIsScrolled(prev => location.pathname !== "/" ? true : prev);
     const handleScroll = () => {
