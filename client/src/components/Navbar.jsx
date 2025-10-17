@@ -41,11 +41,12 @@ const Navbar = () => {
 
   useEffect(() => {
     if (location.pathname   !== "/") {
+        
       setIsScrolled(true);
       return;
     } else {
       setIsScrolled(false);
-      
+
     }
 
 
