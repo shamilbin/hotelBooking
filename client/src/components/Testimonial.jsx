@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "./Title";
 import { testimonials } from "../assets/assets";
+import StarRating from "./StarRating";
 
 const Testimonial = () => {
   return (
@@ -9,8 +10,7 @@ const Testimonial = () => {
         Title={`What Our Guest Say !`}
         subTitle={`Experience why discerning travelers across the globe choose us for exceptional luxury, unmatched comfort, and unforgettable stays that redefine the art of sophisticated travel. `}
       />
-      <div>
-         <div className="flex flex-wrap items-center justify-center gap-6 mt-20 mb-10">
+       <div className="flex flex-wrap items-center gap-6 mt-20 ">
                 {testimonials.map((testimonial) => (
                     <div key={testimonial.id} className="bg-white p-6 rounded-xl shadow max-w-xs">
                         <div className="flex items-center gap-3">
@@ -21,15 +21,12 @@ const Testimonial = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 mt-4">
-                            {Array(5).fill(0).map((_, index) => (
-                                <Star key={index} filled={testimonial.rating > index} />
-                            ))}
+                           <StarRating />
                         </div>
                         <p className="text-gray-500 max-w-90 mt-4">"{testimonial.review}"</p>
                     </div>
                 ))}
             </div>
-      </div>
     </div>
   );
 };
