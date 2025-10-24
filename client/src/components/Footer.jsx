@@ -47,7 +47,7 @@ const Footer = () => {
        <div className='text-gray-500/80 bg-[#F6F9Fc] pt-8 px-6 md:px-16 lg:px-24 xl:px-32'>
             <div className='flex flex-wrap justify-between gap-12 md:gap-6'>
                 <div className='max-w-80'>
-                    <img src={assets.logo} alt="logo" className='mb-4 invert h-8 md:h-9' />
+                    <a href="#"><img src={assets.logo} alt="logo" className='mb-4 invert opacity-80 h-8 md:h-9' /></a>
                     <p className='text-sm'>
                        Discover the world most Extra ordinary place to stay , from botique hotels to luxuary Villa s and Private Islands.
                     </p>
