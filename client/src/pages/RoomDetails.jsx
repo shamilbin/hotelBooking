@@ -72,7 +72,6 @@ const RoomDetails = () => {
                                 <p className="text-xs">{item}</p>
 
                             </div>
-
                         )
 
                         )}
