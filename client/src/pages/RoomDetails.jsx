@@ -73,6 +73,7 @@ const RoomDetails = () => {
 
                             </div>
                         )
+                        
 
                         )}
                     </div>
