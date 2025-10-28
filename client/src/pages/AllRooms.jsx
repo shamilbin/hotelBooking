@@ -3,59 +3,59 @@ import { assets, facilityIcons, roomsDummyData } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
 import StarRating from "../components/StarRating";
 
-const CheckBox = ({ label, selected = false, onChange = () => {} }) => {
-  return (
-    <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm">
-      <input  className="cursor-pointer"
-        type="checkbox"
-        checked={selected}
-        onChange={(e) => onchange(e.target.checked, label)}
-      />
-      <span className="font-light select-none"> {label} </span>
-    </label>
-  );
-};
-
-const RadioButton = ({ label, selected = false, onChange = () => {} }) => {
-  return (
-    <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm">
-      <input className="cursor-pointer"
-        type="radio"
-        name="sortOption"
-        checked={selected}
-        onChange={() => onchange(label)}
-      />
-      <span className="font-light select-none"> {label} </span>
-    </label>
-  );
-};
-
-// const CheckBox = ({ label, selected = false, onchange = () => {} }) => {
+// const CheckBox = ({ label, selected = false, onChange = () => {} }) => {
 //   return (
 //     <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm">
-//       <input
+//       <input  className="cursor-pointer"
 //         type="checkbox"
 //         checked={selected}
 //         onChange={(e) => onchange(e.target.checked, label)}
 //       />
-//       <span className="font-light select-none">{label}</span>
+//       <span className="font-light select-none"> {label} </span>
 //     </label>
 //   );
 // };
 
-// const RadioButton = ({ label, selected = false, onchange = () => {} }) => {
+// const RadioButton = ({ label, selected = false, onChange = () => {} }) => {
 //   return (
 //     <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm">
-//       <input
+//       <input className="cursor-pointer"
 //         type="radio"
 //         name="sortOption"
 //         checked={selected}
 //         onChange={() => onchange(label)}
 //       />
-//       <span className="font-light select-none">{label}</span>
+//       <span className="font-light select-none"> {label} </span>
 //     </label>
 //   );
 // };
+
+const CheckBox = ({ label, selected = false, onchange = () => {} }) => {
+  return (
+    <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm">
+      <input
+        type="checkbox"
+        checked={selected}
+        onChange={(e) => onchange(e.target.checked, label)}
+      />
+      <span className="font-light select-none">{label}</span>
+    </label>
+  );
+};
+
+const RadioButton = ({ label, selected = false, onchange = () => {} }) => {
+  return (
+    <label className="flex gap-3 items-center cursor-pointer mt-2 text-sm">
+      <input
+        type="radio"
+        name="sortOption"
+        checked={selected}
+        onChange={() => onchange(label)}
+      />
+      <span className="font-light select-none">{label}</span>
+    </label>
+  );
+};
 
 const AllRooms = () => {
   const navigate = useNavigate();
