@@ -19,7 +19,7 @@ app.use(clerkMiddleware())
  app.use("/api/clerk",clerkWebHook)
 
 app.get("/",(req,res)=>{
-    res.send("API is working")
+    res.send("API is working fine ✅")
 })
 
 const PORT = process.env.PORT || 3000
