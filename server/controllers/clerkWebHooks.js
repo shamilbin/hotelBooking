@@ -22,6 +22,7 @@ const clerkWebHook = async (req, res) => {
       userName: data.first_name + " " + data.last_name,
       image: data.image_url,
     };
+    console.log(userData)
     // Switch Case for diff events
     switch (type) {
       case "user.created": {
@@ -48,5 +49,7 @@ const clerkWebHook = async (req, res) => {
     res.json({ success: false, message: error.message });
   }
 };
+
+
 
 export default clerkWebHook;
