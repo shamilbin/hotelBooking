@@ -7,6 +7,7 @@ import clerkWebHook from "./controllers/clerkWebHooks.js";
 dotenv.config()
 
 
+
 const app = express();
 
 app.use(cors()); // enable cors origin resourse sharing
