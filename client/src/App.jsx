@@ -8,7 +8,7 @@ import RoomDetails from "./pages/RoomDetails";
 import MyBooking from "./pages/MyBooking";
 import HotelReg from "./components/HotelReg";
 import Layout from "./pages/hotelOwner/Layout";
-import DashBoard from "./pages/hotelOwner/DashBoard";
+import Dashboard from "./pages/hotelOwner/Dashboard"
 import AddRoom from "./pages/hotelOwner/AddRoom";
 import ListRoom from "./pages/hotelOwner/ListRoom";
 
@@ -16,7 +16,7 @@ const App = () => {
   const isOwnerPath = useLocation().pathname.includes("owner");
 
   return (
-    
+
     <div>
       {!isOwnerPath && <Navbar />}
       {false && <HotelReg />}
