@@ -16,6 +16,7 @@ const App = () => {
   const isOwnerPath = useLocation().pathname.includes("owner");
 
   return (
+    
     <div>
       {!isOwnerPath && <Navbar />}
       {false && <HotelReg />}
